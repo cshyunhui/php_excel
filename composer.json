@@ -2,7 +2,7 @@
     "name": "cshyunhui/execl",
     "description": "execl oper libaray function",
     "type": "library",
-    "license": "CSHYUNHUI",
+    "license": "MIT",
     "version": "1.0.1",
     "authors": [
         {
