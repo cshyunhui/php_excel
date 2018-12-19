@@ -1,5 +1,5 @@
 <?php
-
+namespace cshyunhui\execl;
 class ExcelOper {
     /*     * 导出excel
      * @param $head 表头中文
