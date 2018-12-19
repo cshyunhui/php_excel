@@ -1,6 +1,6 @@
 <?php
-namespace cshyunhui\execl;
-class ExcelOper {
+ 
+class Exceloper {
     /*     * 导出excel
      * @param $head 表头中文
      * @param $fields 字段列表

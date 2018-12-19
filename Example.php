@@ -1,7 +1,7 @@
 <?php
 
-require 'excel.php';
-$ExcelOper = new ExcelOper();
+require 'Exceloper.php';
+$ExcelOper = new Exceloper();
 
 //导出数据
 $new_data = null; //数据列表array;
