@@ -86,10 +86,10 @@ class Exceloper {
         return $rs;
     }
 
-/ * 数字转换为A、B...AZ
+    /* 数字转换为A、B...AZ
      * @param $n 键值
      * @param $key_array 字段列表 
- */
+     */
     function num_to_excel_column($n, $key_array) {
         $str = "";
         while ($n > 0) {
