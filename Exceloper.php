@@ -23,14 +23,14 @@ class Exceloper {
         $objActSheet = $objPHPExcel->getActiveSheet();
         $objActSheet->setTitle($name);
         foreach ($head as $key => $value) {
-            $column = num_to_excel_column($key + 1, $key_array);
+            $column = $this->num_to_excel_column($key + 1, $key_array);
             $objActSheet->setCellValueExplicit($column . 1, $value, PHPExcel_Cell_DataType::TYPE_STRING);
         }
         foreach ($data as $k => $obj) {
             $num = $k + 2;
             $j = 1;
             foreach ($fields as $field) {
-                $column = num_to_excel_column($j, $key_array);
+                $column = $this->num_to_excel_column($j, $key_array);
                 $objActSheet->setCellValueExplicit($column . $num, $obj[$field], PHPExcel_Cell_DataType::TYPE_STRING);
                 $j++;
             }
