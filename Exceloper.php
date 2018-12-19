@@ -1,13 +1,14 @@
 <?php
  
 class Exceloper {
+    
+    
     /*     * 导出excel
      * @param $head 表头中文
      * @param $fields 字段列表
      * @param $data 数据集合
      * @param $name 文件名
      */
-
     function exportExcel($head, $fields, $data, $name) {
         set_time_limit(0);
         require_once "src/PHPExcel.php";
@@ -44,9 +45,8 @@ class Exceloper {
     }
 
     /*     * 导入excel 
-     * @param $name 文件名
+     * @param $filePath 文件实际路径
      */
-
     function importExcel($filePath) {
         require_once  "src/PHPExcel.php";
 
